@@ -45,9 +45,26 @@ Q: What command can you use to find the file type of a file?
 
 ### 7. cat
 E: Run cat on different files and directories. Then try to cat multiple files. 
-
-
+- $:cat shell_kurzbefehle.txt (gives me a view into the file)
+- $:cat Shell_Kurzbefehle.txt TheShell_Tutorial.txt (gives me a view to both files)
 
 Q: What's a good way to see the contents of a file?
+- _$:cat myfile_
+
+### 8. less
+E: Run less on a file, then page up and around the file. Try searching for a specific word. Quickly navigate to the beginning or the end of the file.
+-_q - Used to quit out of less and go back to your shell._
+-_Page up, Page down, Up and Down - Navigate using the arrow keys and page keys._
+-_g - Moves to beginning of the text file._
+-_G - Moves to the end of the text file._
+-_/search - You can search for specific text inside the text document. Prefacing the words you want to search with /_
+-_h - If you need a little help about how to use less while you’re in less, use help._
+
+Q: How do you quit out of a less command?
+- press _q_ on the _keyboard_
+
+### 9. history
+
+
 
     
