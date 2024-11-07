@@ -53,12 +53,18 @@ Q: What's a good way to see the contents of a file?
 
 ### 8. less
 E: Run less on a file, then page up and around the file. Try searching for a specific word. Quickly navigate to the beginning or the end of the file.
--_q - Used to quit out of less and go back to your shell._
--_Page up, Page down, Up and Down - Navigate using the arrow keys and page keys._
--_g - Moves to beginning of the text file._
--_G - Moves to the end of the text file._
--_/search - You can search for specific text inside the text document. Prefacing the words you want to search with /_
--_h - If you need a little help about how to use less while you’re in less, use help._
+- _q - Used to quit out of less and go back to your shell._
+
+- _Page up, Page down, Up and Down - Navigate using the arrow keys and page keys._
+
+- _g - Moves to beginning of the text file._
+
+- _G - Moves to the end of the text file._
+
+- _/search - You can search for specific text inside the text document. Prefacing the words you want to search with /_
+
+- _h - If you need a little help about how to use less while you’re in less, use help._
+
 
 Q: How do you quit out of a less command?
 - press _q_ on the _keyboard_
