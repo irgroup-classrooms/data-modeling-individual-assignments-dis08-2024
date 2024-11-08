@@ -45,8 +45,8 @@ Q: What command can you use to find the file type of a file?
 
 ### 7. cat
 E: Run cat on different files and directories. Then try to cat multiple files. 
-- $:cat shell_kurzbefehle.txt (gives me a view into the file)
-- $:cat Shell_Kurzbefehle.txt TheShell_Tutorial.txt (gives me a view to both files)
+- _$:cat shell_kurzbefehle.txt (gives me a view into the file)_
+- _$:cat Shell_Kurzbefehle.txt TheShell_Tutorial.txt (gives me a view to both files)_
 
 Q: What's a good way to see the contents of a file?
 - _$:cat myfile_
@@ -69,7 +69,31 @@ E: Run less on a file, then page up and around the file. Try searching for a spe
 Q: How do you quit out of a less command?
 - press _q_ on the _keyboard_
 
+###9
 ### 9. history
+E: Navigate through your previous command history with the Up and Down keys. Play around with ctrl-R reverse search.
+- _$:history (I can view my previous commands.)_
+  
+- _by pressing ctrl_R I can search previous command in my commandline_
+
+Q: What is the command to clear the terminal?
+
+- _$:clear_
+
+
+### 10. cp(Copy)
+
+E: Copy over a couple of files, be careful not to overwrite anything important.
+with _: *.txt /desktop/uni/dis11_ I copied several textdocuments to a different directory.
+
+Q: What flag do you need to specify to copy over a directory?
+- _$:cp - i_
+
+### 11. mv(Move)
+
+E: Rename a file, then move that file to a different directory.
+
+
 
 
 
