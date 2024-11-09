@@ -74,7 +74,7 @@ Q: How do you quit out of a less command?
 E: Navigate through your previous command history with the Up and Down keys. Play around with ctrl-R reverse search.
 - _$:history (I can view my previous commands.)_
   
-- _by pressing ctrl_R I can search previous command in my commandline_
+- by pressing _ctrl_R_ I can search previous command in my commandline
 
 Q: What is the command to clear the terminal?
 
