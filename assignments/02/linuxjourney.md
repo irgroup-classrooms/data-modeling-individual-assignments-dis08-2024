@@ -84,7 +84,7 @@ Q: What is the command to clear the terminal?
 ### 10. cp(Copy)
 
 E: Copy over a couple of files, be careful not to overwrite anything important.
-with _: *.txt /desktop/uni/dis11_ I copied several textdocuments to a different directory.
+with _$: *.txt /desktop/uni/dis11_ I copied several textdocuments to a different directory.
 
 Q: What flag do you need to specify to copy over a directory?
 - _$:cp - i_
@@ -92,6 +92,82 @@ Q: What flag do you need to specify to copy over a directory?
 ### 11. mv(Move)
 
 E: Rename a file, then move that file to a different directory.
+- _$: mv oldfile newfile_
+- _$: mv file2 /home/pete/Documents_
+
+Q: How do you rename a file called cat to dog?
+- _$:mv cat dog_
+
+### 12. mkdir (Make Directory)
+
+E: Make a couple of directories and move some files into that directory.
+- _$: mkdir books paintings_
+- _$: mv file1 file2 /books_
+
+Q: What command is use to make a directory?
+- _$:mkdir_
+
+### 13. rm (Remove)
+
+E: Create a file called -file (don't forget the dash!).
+   Remove that file.
+- _$: touch -file_
+- _$: rm -file_
+
+Q: How do you remove a file called myfile? 
+- _$:rm myfile_
+
+### 14. find
+
+E: Find a file from the root directory that has the word net in it.
+- _$: find -name net_
+
+Q: What option should I specify for find if I want to search by name?  
+- _$: find -name_
+
+### 15. find
+
+E: Run help on the echo command, logout command and pwd command.
+- _$: help echo_
+
+Q: How do you get quick command line help for built-in bash commands?  
+- _$: help_
+
+### 16. man
+
+E: Run the man command on the ls command.
+- _$: man ls_
+
+Q: How do you see the manuals for a command?  
+- _$: man_
+
+### 17. whatis
+
+E: Run the whatis command on the less command.
+- _$: whatis less_
+
+Q: What command can you use to see a small description of a command?  
+- _$: whatis_
+
+### 18. alias
+
+E: Create a couple of aliases then remove them.
+- _$: alias foobar='ls -la'_
+
+Q: What command is used to make an alias?  
+- _$: alias_
+
+### 19. exit
+
+E: Exit out of the shell and see what happens. Make sure you don't need to do anymore work in that shell.
+- _$: exit_
+
+Q: How can you exit from the shell?   
+- _$: exit_
+
+
+
+
 
 
 
