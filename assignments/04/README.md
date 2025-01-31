@@ -12,42 +12,52 @@ You can add your command line in- and outputs directly to this README file. Alte
 
 1. Extract all email addresses from the text.
 ``` 
+grep -E -o "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" csv/contacts.csv
 
 ``` 
 2. Extract all phone numbers from the text.
 ``` 
+grep -E -o "\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}" csv/contacts.csv
 
 ``` 
 3. Extract all names that start with the letter ‘J’.
 ``` 
+grep -E -o "\bJ[a-zA-Z]+\b" csv/contacts.csv
 
 ``` 
 4. Extract all street names that contain the word 'St'.
 ``` 
+grep -E -o "[0-9]+\s+[^,]*St[^,]*" csv/contacts.csv
 
 ``` 
 5. Extract all addresses in ‘USA’.
 ``` 
+grep -E ",\s*USA" csv/contacts.csv
 
 ``` 
 6. Extract the last names of all people.
 ``` 
+grep -E -o "[A-Z][a-z]+\s[A-Z][a-z]+" csv/contacts.csv | awk '{print $2}'
 
 ``` 
 7. Extract all email domains (part after the @ sign).
 ``` 
+grep -E -o "@[a-zA-Z0-9.-]+" csv/contacts.csv | sed 's/@//'
 
 ``` 
 8.	Extract all instances of the first name ‘David’ along with their full address (street and city).
 ``` 
+grep -E "^David[^,]*,[^,]*,[^,]*" csv/contacts.csv
 
 ``` 
 9.	Find all entries where the phone number ends with ‘7’.
 ``` 
+grep -E "\d{3}[-.\s]?\d{3}[-.\s]?\d{3}7" csv/contacts.csv
 
 ``` 
 10.	Extract all instances of first names that end with the letter 'e'.
 ``` 
+grep -E -o "\b[A-Za-z]+e\b" csv/contacts.csv
 
 ``` 
 
